@@ -279,23 +279,23 @@ div.indent {
 }
 
 .purpletopbar {
-	background: rgb(104, 0, 160);
+	background: rgb(144, 0, 172);
 }
 .purplegradient, .purplegradient_hover {
 	background: rgb(128, 128, 128);
-	background: -webkit-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
-	background:    -moz-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
-	background:     -ms-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
-	background:      -o-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
-	background:         linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
+	background: -webkit-linear-gradient(rgb(196, 0, 255), rgb(128, 0, 144));
+	background:    -moz-linear-gradient(rgb(196, 0, 255), rgb(128, 0, 144));
+	background:     -ms-linear-gradient(rgb(196, 0, 255), rgb(128, 0, 144));
+	background:      -o-linear-gradient(rgb(196, 0, 255), rgb(128, 0, 144));
+	background:         linear-gradient(rgb(196, 0, 255), rgb(128, 0, 144));
 }
 .purplegradient_hover:hover {
 	background: rgb(0, 0, 0);
-	background: -webkit-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
-	background:    -moz-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
-	background:     -ms-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
-	background:      -o-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
-	background:         linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
+	background: -webkit-linear-gradient(rgb(160, 0, 192), rgb(64, 0, 96));
+	background:    -moz-linear-gradient(rgb(160, 0, 192), rgb(64, 0, 96));
+	background:     -ms-linear-gradient(rgb(160, 0, 192), rgb(64, 0, 96));
+	background:      -o-linear-gradient(rgb(160, 0, 192), rgb(64, 0, 96));
+	background:         linear-gradient(rgb(160, 0, 192), rgb(64, 0, 96));
 }
 
 .cyantopbar {
