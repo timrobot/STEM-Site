@@ -1,5 +1,5 @@
-var htmlPageKeys = ["home", "biology", "chemistry", "physics", "medicine", "mathematics", "robotics", "template"];
-var htmlPages = ["index.html", "biology.html", "chemistry.html", "physics.html", "medicine.html", "mathematics.html", "robotics.html", "template.html"];
+var htmlPageKeys = ["home", "biology", "chemistry", "physics", "medicine", "mathematics", "robotics"];
+var htmlPages = ["index.html", "biology.html", "chemistry.html", "physics.html", "medicine.html", "mathematics.html", "robotics.html"];
 
 function cursorPointer() {
 	document.body.style.cursor = "pointer";

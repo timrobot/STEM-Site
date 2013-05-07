@@ -15,7 +15,7 @@
 					return $index;
 				}
 				$size = count($index);
-				$midpoint = $size / 2;
+				$midpoint = intval($size / 2);
 				$list1 = array();
 				for ($i = 0; $i < $midpoint; $i++) {
 					$list1[] = $index[$i];
@@ -161,10 +161,8 @@
 	</head>
 	<body onmousedown="resetSearchBox()">
 		<div id="header" class="blackgradient">
-			<div class="button hiddenbutton" onclick="openURL('template.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
-				Template
-			</div>
 		</div>
+
 		<div id="topbar" class="blacktopbar">
 			<div class="button topbutton blackgradient_hover" style="border-top-left-radius:4px;border-bottom-left-radius:4px" onclick="openURL('index.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
 				<img class="topimage" src="images/Home-icon.png" />
