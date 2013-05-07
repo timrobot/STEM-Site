@@ -1,0 +1,319 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	font-size: 14px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial;
+	height: 100%;
+	background: rgb(240, 240, 240);
+}
+h1 {
+	text-align: center;
+	font-size: 100px;
+	font-weight: normal;
+}
+h2 {
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	color: rgb(127, 127, 127);
+}
+div.button {
+	display: block;
+	width: 100px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 4px;
+}
+div.topbutton {
+	height: 124px;
+	margin-right: 1px;
+	float: left;
+	border-radius:0px;
+}
+img.topimage {
+	display: block;
+	height: 80px;
+	width: 80px;
+	border-radius: 8px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+div.hiddenbutton {
+	opacity: 0.0;
+	filter: alpha(opacity = 0);
+}
+div.hiddenbutton:hover {
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+#header {
+	min-width: 1024px;
+	max-width: 100%;
+	height: 64px;
+	margin-bottom: 24px;
+}
+#footer {
+	min-width: 1024px;
+	max-width: 100%;
+	height: 96px;
+	margin-top: 24px;
+}
+#topbar {
+	display: block;
+	font-weight: bold;
+	border-radius: 4px;
+	height: 124px;
+	width: 1024px;      /* change this amount whenever you modify the topbar buttons */
+	margin: 0px auto;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+#searchImage {
+	height: 80px;
+	width: 160px;
+	margin: 0px auto;
+	margin-top: 6px;
+	display: block;
+}
+#searchBox {
+	border: 0px;
+	border-radius: 9px;
+	color: rgb(127, 127, 127);
+	font-family: Arial;
+	line-height: 12px;
+	font-size: 12px;
+	padding: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+	outline: 0px;
+	width: 270px;
+}
+#content {
+	background: white;
+	margin: 0px auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	width: 1000px;
+	min-height: 1000px;
+	padding: 12px;
+	border: 1px solid rgb(228, 228, 228);
+	border-radius: 4px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial;
+}
+div.hdiv {
+	display: block;
+	width: 960px;
+	margin: 20px auto;
+	border-top: 1px solid rgb(196, 196, 196);
+	clear: both;
+}
+div.leftdiv {
+	display: block;
+	width: 467px;
+	margin-left: 20px;
+	float: left;
+	border-right: 1px solid rgb(196, 196, 196);
+	padding-right: 12px;
+}
+div.rightdiv {
+	display: block;
+	width: 467px;
+	margin-right: 20px;
+	float: left;
+	border-left: 1px solid white;
+	padding-left: 12px;
+}
+div.clearafter {
+	clear: both;
+}
+div.resultimage {
+	width: 128px;
+	height: 128px;
+	border-radius: 12px;
+	line-height: 128px;
+	text-align: center;
+	color: white;
+	float: left;
+}
+img.resultimage {
+	display: block;
+	background-color: black;
+	width: 128px;
+	height: 128px;
+	border-radius: 12px;
+	float: left;
+	margin-right: 20px;
+}
+div.resultbox {
+	display: block;
+	padding: 12px;
+	margin-left: 8px;
+	margin-right: 8px;
+	border-radius: 4px;
+	height: 128px;
+}
+div.resultbox:hover {
+	background-color: rgb(226, 226, 226);
+}
+div.code {
+	display: block;
+	border: 2px solid #969696;
+	border-radius: 4px;
+	background-color: #f0f0f0;
+	padding: 8px;
+	line-height: 32px;
+	margin: 12px auto;
+	font-family: monospace;
+}
+div.indent {
+	margin-left: 32px;
+}
+
+
+/* Color gradients */
+.blacktopbar {
+	background: rgb(72, 72, 72);
+}
+.blackgradient, .blackgradient_hover {
+	background: rgb(128, 128, 128);
+	background: -webkit-linear-gradient(rgb(160, 160, 160), rgb(16, 16, 16));
+	background:    -moz-linear-gradient(rgb(160, 160, 160), rgb(16, 16, 16));
+	background:     -ms-linear-gradient(rgb(160, 160, 160), rgb(16, 16, 16));
+	background:      -o-linear-gradient(rgb(160, 160, 160), rgb(16, 16, 16));
+	background:         linear-gradient(rgb(160, 160, 160), rgb(16, 16, 16));
+}
+.blackgradient_hover:hover {
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(rgb(96, 96, 96), rgb(0, 0, 0));
+	background:    -moz-linear-gradient(rgb(96, 96, 96), rgb(0, 0, 0));
+	background:     -ms-linear-gradient(rgb(96, 96, 96), rgb(0, 0, 0));
+	background:      -o-linear-gradient(rgb(96, 96, 96), rgb(0, 0, 0));
+	background:         linear-gradient(rgb(96, 96, 96), rgb(0, 0, 0));
+}
+
+.redtopbar {
+	background: rgb(192, 36, 36);
+}
+.redgradient, .redgradient_hover {
+	background: rgb(128, 128, 128);
+	background: -webkit-linear-gradient(rgb(255, 64, 64), rgb(160, 16, 16));
+	background:    -moz-linear-gradient(rgb(255, 64, 64), rgb(160, 16, 16));
+	background:     -ms-linear-gradient(rgb(255, 64, 64), rgb(160, 16, 16));
+	background:      -o-linear-gradient(rgb(255, 64, 64), rgb(160, 16, 16));
+	background:         linear-gradient(rgb(255, 64, 64), rgb(160, 16, 16));
+}
+.redgradient_hover:hover {
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(rgb(224, 32, 32), rgb(148, 0, 0));
+	background:    -moz-linear-gradient(rgb(224, 32, 32), rgb(148, 0, 0));
+	background:     -ms-linear-gradient(rgb(224, 32, 32), rgb(148, 0, 0));
+	background:      -o-linear-gradient(rgb(224, 32, 32), rgb(148, 0, 0));
+	background:         linear-gradient(rgb(224, 32, 32), rgb(148, 0, 0));
+}
+
+.greentopbar {
+	background: rgb(36, 192, 36);
+}
+.greengradient, .greengradient_hover {
+	background: rgb(128, 128, 128);
+	background: -webkit-linear-gradient(rgb(64, 255, 64), rgb(16, 160, 16));
+	background:    -moz-linear-gradient(rgb(64, 255, 64), rgb(16, 160, 16));
+	background:     -ms-linear-gradient(rgb(64, 255, 64), rgb(16, 160, 16));
+	background:      -o-linear-gradient(rgb(64, 255, 64), rgb(16, 160, 16));
+	background:         linear-gradient(rgb(64, 255, 64), rgb(16, 160, 16));
+}
+.greengradient_hover:hover {
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(rgb(32, 224, 32), rgb(0, 128, 0));
+	background:    -moz-linear-gradient(rgb(32, 224, 32), rgb(0, 128, 0));
+	background:     -ms-linear-gradient(rgb(32, 224, 32), rgb(0, 128, 0));
+	background:      -o-linear-gradient(rgb(32, 224, 32), rgb(0, 128, 0));
+	background:         linear-gradient(rgb(32, 224, 32), rgb(0, 128, 0));
+}
+
+.bluetopbar {
+	background: rgb(72, 72, 192);
+}
+.bluegradient, .bluegradient_hover {
+	background: rgb(128, 128, 128);
+	background: -webkit-linear-gradient(rgb(128, 128, 255), rgb(32, 32, 180));
+	background:    -moz-linear-gradient(rgb(128, 128, 255), rgb(32, 32, 180));
+	background:     -ms-linear-gradient(rgb(128, 128, 255), rgb(32, 32, 180));
+	background:      -o-linear-gradient(rgb(128, 128, 255), rgb(32, 32, 180));
+	background:         linear-gradient(rgb(128, 128, 255), rgb(32, 32, 180));
+}
+.bluegradient_hover:hover {
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(rgb(64, 64, 224), rgb(16, 16, 160));
+	background:    -moz-linear-gradient(rgb(64, 64, 224), rgb(16, 16, 160));
+	background:     -ms-linear-gradient(rgb(64, 64, 224), rgb(16, 16, 160));
+	background:      -o-linear-gradient(rgb(64, 64, 224), rgb(16, 16, 160));
+	background:         linear-gradient(rgb(64, 64, 224), rgb(16, 16, 160));
+}
+
+.orangetopbar {
+	background: rgb(208, 96, 0);
+}
+.orangegradient, .orangegradient_hover {
+	background: rgb(128, 128, 128);
+	background: -webkit-linear-gradient(rgb(255, 192, 32), rgb(192, 96, 24));
+	background:    -moz-linear-gradient(rgb(255, 192, 32), rgb(192, 96, 24));
+	background:     -ms-linear-gradient(rgb(255, 192, 32), rgb(192, 96, 24));
+	background:      -o-linear-gradient(rgb(255, 192, 32), rgb(192, 96, 24));
+	background:         linear-gradient(rgb(255, 192, 32), rgb(192, 96, 24));
+}
+.orangegradient_hover:hover {
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(rgb(224, 160, 16), rgb(128, 48, 0));
+	background:    -moz-linear-gradient(rgb(224, 160, 16), rgb(128, 48, 0));
+	background:     -ms-linear-gradient(rgb(224, 160, 16), rgb(128, 48, 0));
+	background:      -o-linear-gradient(rgb(224, 160, 16), rgb(128, 48, 0));
+	background:         linear-gradient(rgb(224, 160, 16), rgb(128, 48, 0));
+}
+
+.purpletopbar {
+	background: rgb(104, 0, 160);
+}
+.purplegradient, .purplegradient_hover {
+	background: rgb(128, 128, 128);
+	background: -webkit-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
+	background:    -moz-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
+	background:     -ms-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
+	background:      -o-linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
+	background:         linear-gradient(rgb(160, 0, 255), rgb(72, 0, 144));
+}
+.purplegradient_hover:hover {
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
+	background:    -moz-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
+	background:     -ms-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
+	background:      -o-linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
+	background:         linear-gradient(rgb(128, 0, 192), rgb(48, 0, 96));
+}
+
+.cyantopbar {
+	background: rgb(0, 208, 208);
+}
+.cyangradient, .cyangradient_hover {
+	background: rgb(128, 128, 128);
+	background: -webkit-linear-gradient(rgb(0, 255, 255), rgb(0, 180, 180));
+	background:    -moz-linear-gradient(rgb(0, 255, 255), rgb(0, 180, 180));
+	background:     -ms-linear-gradient(rgb(0, 255, 255), rgb(0, 180, 180));
+	background:      -o-linear-gradient(rgb(0, 255, 255), rgb(0, 180, 180));
+	background:         linear-gradient(rgb(0, 255, 255), rgb(0, 180, 180));
+}
+.cyangradient_hover:hover {
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(rgb(0, 224, 224), rgb(0, 160, 160));
+	background:    -moz-linear-gradient(rgb(0, 224, 224), rgb(0, 160, 160));
+	background:     -ms-linear-gradient(rgb(0, 224, 224), rgb(0, 160, 160));
+	background:      -o-linear-gradient(rgb(0, 224, 224), rgb(0, 160, 160));
+	background:         linear-gradient(rgb(0, 224, 224), rgb(0, 160, 160));
+}

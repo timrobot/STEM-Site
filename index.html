@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bergenfield High STEM</title>
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<meta name="name" content="Home Page">
+		<meta name="icon" content="images/ENGLISH-BUTTON.png">
+		<meta name="description" content="Description">
+		<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+		<script src="scripts/functions.js"></script>
+	</head>
+	<body onmousedown="resetSearchBox()">
+		<div id="header" class="blackgradient">
+			<div class="button hiddenbutton" onclick="openURL('template.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				Template
+			</div>
+		</div>
+
+		<div id="topbar" class="blacktopbar">
+			<div class="button topbutton blackgradient_hover" style="border-top-left-radius:4px;border-bottom-left-radius:4px" onclick="openURL('index.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/Home-icon.png" />
+				Home
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('biology.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/microscope_science_biology.png" />
+				Biology
+				</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('chemistry.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/chemistry.png" />
+				Chemistry
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('physics.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/atom.png" />
+				Physics
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('medicine.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/rx_symbol_medicine_logo_white.png" />
+				Medicine
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('mathematics.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/eipi.png" />
+				Mathematics
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('robotics.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/Sony_Qrio_Robot_2.png" />
+				Robotics
+			</div>
+			<div class="button topbutton blackgradient" style="margin-right:0px;border-top-right-radius:4px;border-bottom-right-radius:4px;width:317px">
+				<img id="searchImage" src="images/lvl-0.png" />
+				<form action="search.php" method="get">
+					<input type="text" name="query" id="searchBox"  autocomplete="off" autocorrect="off" autocaptalize="off" onclick="selectSearchBox()"></input>
+				</form>
+			</div>
+		</div>
+
+		<div id="content">
+			<h1>Welcome</h1>
+			<br/>
+			<h2>Site is under construction.<br/>Good luck doing anything.</h2>
+			<br/>
+			<div class="hdiv"></div>
+			<div class="leftdiv">
+				<div style="width:100%;height:450px"></div>
+			</div>
+			<div class="rightdiv">
+				<div style="width:100%;height:450px"></div>
+			</div>
+			<div class="clearafter"></div>
+		</div>
+
+		<div id="footer" class="blackgradient">
+			<!-- Nothing in here so far. -->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bergenfield High STEM</title>
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<meta name="name" content="JARVIS">
+		<meta name="icon" content="images/US-HISTORY-BUTTON.png">
+		<meta name="description" content="Description">
+		<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+		<script src="scripts/functions.js"></script>
+	</head>
+	<body onmousedown="resetSearchBox()">
+		<div id="header" class="blackgradient">
+			<div class="button" onclick="openURL('template.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				Template
+			</div>
+		</div>
+
+		<div id="topbar" class="blacktopbar">
+			<div class="button topbutton blackgradient_hover" style="border-top-left-radius:4px;border-bottom-left-radius:4px" onclick="openURL('index.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/Home-icon.png" />
+				Home
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('biology.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/microscope_science_biology.png" />
+				Biology
+				</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('chemistry.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/chemistry.png" />
+				Chemistry
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('physics.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/atom.png" />
+				Physics
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('medicine.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/rx_symbol_medicine_logo_white.png" />
+				Medicine
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('mathematics.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/eipi.png" />
+				Mathematics
+			</div>
+			<div class="button topbutton blackgradient_hover" onclick="openURL('robotics.html')" onmouseover="cursorPointer()" onmouseout="defaultPointer()">
+				<img class="topimage" src="images/Sony_Qrio_Robot_2.png" />
+				Robotics
+			</div>
+			<div class="button topbutton blackgradient" style="margin-right:0px;border-top-right-radius:4px;border-bottom-right-radius:4px;width:317px">
+				<img id="searchImage" src="images/lvl-0.png" />
+				<form action="search.php" method="get">
+					<input type="text" name="query" id="searchBox"  autocomplete="off" autocorrect="off" autocaptalize="off" onclick="selectSearchBox()"></input>
+				</form>
+			</div>
+		</div>
+
+		<div id="content">
+			<div style="margin:0px auto;margin-top:10px;margin-bottom:20px;padding:20px;width:640px;background-color:black;border-radius:70px;line-height:100px;font-size:100px;text-align:center;color:cyan">
+				J.A.R.V.I.S.
+			</div>
+			<h2>Just Another Realtime Virtual Intelligence System</h2>
+			<br/>
+			<div class="hdiv"></div>
+			<div class="leftdiv">
+			<h2>My Search Engine Code</h2>
+				<div class="code">
+					// heap or merge sort for sorting purposes<br/>
+					function sort();<br/>
+					// get a webpage using fopen()<br/>
+					function get_web_page();<br/>
+					// get the links from a webpage<br/>
+					function get_links();<br/>
+					// get the occurrences of a word from a webpage<br/>
+					function get_word_frequency();<br/>
+					// crawl all the webpages on the site<br/>
+					function crawl_web();<br/>
+					// "search" a term =&gt; return list of links<br/>
+					function search();
+				</div>
+			</div>
+			<div class="rightdiv">
+			<h2>Example Python Code</h2>
+				<div class="code">
+					# database crawled, prefixtree index<br/>
+					def crawl_web(seed, words, crawled, index):
+					<div class="indent">
+						to_crawl = [seed]<br/>
+						i = 0<br/>
+						while (i &lt; len(to_crawl):
+						<div class="indent">
+							if (!crawled.lookup(to_crawl[i])):
+							<div class="indent">
+								crawled.add(get_links(to_crawl[i]))<br/>
+								for word in words:
+								<div class="indent">
+									page = get_page(to_crawl[i])<br/>
+									index.insert(word, (to_crawl[i], get_word_frequency(page, word)))<br/>
+								</div>
+							</div>
+							i++
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearafter"></div>
+			<div class="hdiv"></div>
+		</div>
+
+		<div id="footer" class="blackgradient">
+			<!-- Nothing in here so far. -->
+		</div>
+	</body>
+</html>
