@@ -22,7 +22,7 @@ def siftDown( index, node ):
 	temp = index[0]
 	index[0] = index[node]
 	index[node] = temp
-	ptr = 0	# set ptr to root
+	ptr = 0
 	while (ptr < node):
 		left = ptr * 2 + 1
 		right = left + 1
@@ -70,7 +70,7 @@ def get_all_links( page ):
 		startIndex = page.find("openURL", startIndex)
 	return links
 
-def get_word_frequency( page, word, ignore_case = True):
+def get_word_frequency( page, word, ignore_case = True ):
 	occurences = 0
 	if (ignore_case):
 		page = page.lower()
@@ -93,7 +93,7 @@ def crawl_web( seed, words ):
 			for link in page_links:
 				if (link not in links):
 					links.append(link)
-			# get the rank
+			# get the rank (url storage mechanism, not keyword)
 			rank = 0
 			for word in words:
 				if (links[i].find(word) != -1):
@@ -117,7 +117,7 @@ def search( query ):
 		if (end == len(query) and start < end):
 			words.append(query[start:end])
 	# crawl
-	index = crawl_website("index.html", words)
+	index = crawl_web("index.html", words)
 	# sort results
 	index = heapsort(index)
 	return index
