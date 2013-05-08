@@ -1,9 +1,7 @@
-# Django settings for mysite project.
-import os
+# Django settings for newsite project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-BASE_DIR = '/home/timothy/web/mysite/'
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -14,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),                     # Or path to database file if using sqlite3.
+        'NAME': 'wiki.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -30,7 +28,7 @@ ALLOWED_HOSTS = []
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -84,7 +82,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'nu$sn%oeg%6&amp;m2ikh9l@g7sug_4f_3!8n-as8!7msl%9lkawnx'
+SECRET_KEY = '7$+qz*vg$d3%g&amp;!b6b9vzfr+!sr65(t4+$4x_vf^svc*cd@2#)'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -103,29 +101,30 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'mysite.urls'
+ROOT_URLCONF = 'newsite.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'mysite.wsgi.application'
+WSGI_APPLICATION = 'newsite.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	"/home/timothy/web/newsite/templates/"
 )
 
 INSTALLED_APPS = (
-    'django.contrib.auth',
+	'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'wiki',
     # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
+    #'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    'django.contrib.admindocs',
-	'polls',
+    # 'django.contrib.admindocs',
 )
 
 # A sample logging configuration. The only tangible logging
