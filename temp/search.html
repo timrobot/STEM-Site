@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="name" content="" />
+		<meta name="icon" content="" />
+		<meta name="description" content="" />
+	</head>
+	<body>
+        <br />
+	    <h1>Search</h1>
+		<br/>
+		<h2>Found <span id="resultsLength">{{ results|length }}</span> results</h2>
+		<div style="padding:24px">
+	        {% if results|length != 0 %}
+		        {% for result in results %}
+	                <a id="result{{ result.number }}" class="resultbox" href="{{ result.url }}">
+                        {% if result.icon != "" %}
+					        <img src="{{ result.icon }}" class="resultimage" />
+                        {% else %}
+                            <div class="resultimage blackgradient">?</div>
+                        {% endif %}
+					    <br/>
+					    <h2 style="color:black;text-align:left">
+                            {% if result.name != "" %}
+						        {{ result.name }}
+                            {% else %}
+                                {{ result.url }}
+                            {% endif %}
+					    </h2>
+						<br/>
+                        {% if result.description != "" %}
+						    {{ result.description }}
+                        {% else %}
+                            No description
+                        {% endif %}
+				    </a>
+					<div style="clear:both"></div>
+		        {% endfor %}
+				<script type="text/javascript">
+					function animateResult( eid, state ) {
+						document.getElementById(eid).style.marginTop = state + "px";
+						document.getElementById(eid).style.opacity = (100 - state)/100.0 + "";
+						document.getElementById(eid).style.filter = "alpha(opacity=" + (100 - state) + ")";
+						if (state > 0) {
+							setTimeout("animateResult('" + eid + "'," + (state - 20) + ")", 25);
+						}
+					}
+					var length = parseInt(document.getElementById("resultsLength").innerHTML);
+					for (var i = 0; i < length; i++) {
+						document.getElementById("result" + i).style.opacity = 0.0;
+						document.getElementById("result" + i).style.filter = "alpha(opacity=" + 0 + ")";
+						setTimeout("animateResult('result" + i + "', 80)", 80 * (i + 3));
+					}
+				</script>
+		    {% endif %}
+		</div>
+	</body>
+</html>
