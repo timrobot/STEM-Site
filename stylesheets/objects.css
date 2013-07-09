@@ -32,6 +32,7 @@
 	filter: alpha(opacity = 100);
 	transition: opacity 0.4s;
 	-webkit-transition: opacity 0.4s;
+	display: block;
 }
 #searchContainer {
 	margin: 0px auto;
